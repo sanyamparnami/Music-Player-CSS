@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neha Kakkar</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="icon" href="source/playerlogo.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+</head>
+<body>
+	<header>
+	<div id="nav-bar">
+		<div id="header-leftside">
+			<img src="source/musicicon.png" id="logo" class="animated pulse infinite">
+			<a href="musicplayerhome.html" id="player">Sanyam<br><b>Studio</b></a>
+			<a href=""class="center-align" id="fav">PLAYLIST</a>
+		</div>
+		<div id="header-rightside">
+			<form id="search-bar" class="header-resp">
+				<button type="button" id="search-icon">
+					<i class="fas fa-search"></i>
+				</button>
+				<input type="text" name="search-item" placeholder="Search..." id="searcher" class="left-negative">
+				<button type="button" class="left-negative" id="mic-icon">
+					<i class="fas fa-microphone"></i>
+				</button>
+			</form>
+			<div id="notification" class="center-align header-resp">
+				<i class="fas fa-bell"></i>
+			</div>
+			<div id="profile" class="center-align header-resp">
+					<img src="source/dp.jpg" id="profile-image">
+			</div>
+		</div>
+		<div class = "dropdown-menu text-right">
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class ="dropdown-list">
+                <ul class = "no-list-style">
+                    <li>
+   		                <a href="" class="a-style-none"> Notifications </a>
+                    </li>
+                    <li>
+                        <a href="" class="a-style-none"> Profile </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	</header>
+
+	<main>
+		<div id="artist-info" class="animated flash">
+			<img src="source/nehakakkkar.webp" id="ed-desc-image">
+			<div id="artist-desc">
+				<h1>Neha Kakkar</h1>
+				<h3 class="desc-font-color">Indian Singer</h3>
+				<p class="desc-font-color">Neha Kakkar (born 6 June 1988) is an Indian playback singer. She began performing at religious events at the age of four and participated in the second season of the singing reality show, Indian Idol, in which she was eliminated early in the show. After several struggles in her career, she made her Bollywood debut as a chorus singer in the film Meerabai Not Out (2008). She rose to prominence upon the release of the dance track "Second Hand Jawani" from Cocktail (2012), which was followed by several other popular party songs including "Sunny Sunny" from Yaariyan (2014) and "London Thumakda" from Queen (2014).</p>
+				<form style="display: inline-block;">
+					<button type="button" id="play-all">
+						<p>Play all</p>	
+					</button>
+				</form>
+				<a href="" class="a-style-none">Follow</a>
+			</div>
+		</div>
+		<div class="queue-song song-background">
+			<i class="fas fa-align-right center-align icon-rotate queue-prefix"></i>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/garmi.jfif" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Garmi</h3>
+					<p>Neha Kakkar</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">01</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/nazy.jpg" class="queue-song-image  queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Tehelka</h3>
+					<p>Nazy</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon ">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">02</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/latestHindi4.png" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kedarnath</h3>
+					<p></p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">03</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/gullyboy2.jfif" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Azadi</h3>
+					<p></p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon ">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">04</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/malang.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Chal Ghar Chalen</h3>
+					<p>Arijit Singh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">05</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/bari.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+				<h3>Baari</h3>
+					<p>Bilal Saeed</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">06</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/baateionkro.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Baateion Kro</h3>
+					<p></p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+
+	</main>
+
+	<aside>
+		<div id="queue-heading">
+			<h1>Queue</h1>
+			<div class = "dropdown-menu text-right">
+    			<div class="queue-dropdown queue-resp">
+    				Queue<i class="fas fa-chevron-down"></i>
+   				</div>
+				<div class ="dropdown-list queue-list">
+					<ul class = "no-list-style ul-width">
+                        <li >
+                    	  	<a href="" class="a-style-none">
+                       			Playlist
+                       		</a>
+                       	</li>
+                       	<li>	
+                           	<a href="" class="a-style-none">
+                           		Favourite songs
+                           	</a>
+                       	</li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/garmi.jfif" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Garmi</h3>
+					<p>Neha Kakkar</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/nazy.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Tehelka</h3>
+					<p>Nazy</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/latestHindi4.png" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kedarnath</h3>
+					<p></p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/gullyboy2.jfif" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Azadi</h3>
+					<p></p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<h1>Recently Played</h1>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">01</p>
+			<a href="#play-bar" class="a-style-none center-align rp-song-image">
+				<img src="source/malang.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Chal Ghar Chalen</h3>
+					<p>Arjit Singh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">02</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/jee.jfif" class="queue-song-image rp-song-image">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Jee Kar Da</h3>
+					<p>Hardy Sandhu</p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">03</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kala.jpg" class="queue-song-image rp-song-image">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kalla Sohna Nai </h3>
+					<p>Neha Kakkar</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">04</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/tuhidas.jfif" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Tu Hi Das De</h3>
+					<p>Mickey Singh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">05</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/bue.jpg" class="queue-song-image ">
+			</a>
+		<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Buhe Bariyan</h3>
+					<p>Rashmeet Kaur</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">06</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/phir.webp" class="queue-song-image ">
+			</a>
+		<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Phir Na Milen Kabhi</h3><br>
+					<p>Ankit Tiwari</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+
+	</aside>
+
+	<footer> 
+	<div id="play-bar">
+		<div class="player-rightside">
+			<div class="queue-song">
+				<img src="source/queue/stran.jfif" class="player-song-image center-align">
+				<div class="queue-song-name name-play-bar-resp">
+					<h3>Stranger</h3>
+					<p>Diljit Dosanjh</p>
+				</div>
+				<a href="" class="a-style-none favourite-icon name-play-bar-resp">
+					<i class="fas fa-ban ban-hover"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</a>
+			</div>
+		</div>
+		<div class="player-center">
+			<div class="player-controls">
+				<i class="fas fa-random center-align control-play-bar-resp"></i>
+				<i class="fas fa-step-backward center-align"></i>
+				<i class="fas fa-play-circle center-align" id="play-button"></i>
+				<i class="fas fa-step-backward icon-rotate-full center-align"></i>
+				<i class="fas fa-undo-alt center-align control-play-bar-resp"></i>
+			</div>
+			<span class="song-duration control-play-bar-resp">0:00</span>
+			<div class="progress">
+				<div class="played"></div>
+			</div>
+			<span class="song-duration control-play-bar-resp">3:44</span>
+			</div>
+			<div class="player-leftside">
+				<i class="fas fa-stream center-align volume-play-bar-resp"></i>
+				<i class="fab fa-soundcloud center-align volume-play-bar-resp"></i>
+				<div class="center-align">
+					<span ><i class="fas fa-volume-up "></i></span>
+					<div class="progress volume-progress" >
+						<div class="played "></div>
+					</div>
+				</div>
+				<i class="fas fa-expand center-align volume-play-bar-resp"></i>
+				<a href="#" class="a-style-none">x</a>
+			</div>
+	</footer>
+</body>
+</html>

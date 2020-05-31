@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Music player</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="icon" href="source/musicicon.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+</head>
+<body>
+	<!--NavBar-->
+	<header>
+	<div id="nav-bar">
+		<div id="header-leftside">
+			<img src="source/musicicon.png" id="logo" class="animated pulse infinite">
+			<a href="musicplayerhome.html" id="player">Sanyam<br><b>Studio</b></a>
+			<a href=""class="center-align" id="fav">MUSIC PLAYER</a>
+		</div>
+		<div id="header-rightside">
+			<form id="search-bar" class="header-resp">
+				<button type="button" id="search-icon">
+					<i class="fas fa-search"></i>
+				</button>
+				<input type="text" name="search-item" placeholder="Search..." id="searcher" class="left-negative">
+				<button type="button" class="left-negative" id="mic-icon">
+					<i class="fas fa-microphone"></i>
+				</button>
+			</form>
+			<div id="notification" class="center-align header-resp">
+				<i class="fas fa-bell"></i>
+			</div>
+			<div id="profile" class="center-align header-resp">
+					<img src="source/dp.jpg" id="profile-image">
+			</div>
+		</div>
+		<div class = "dropdown-menu text-right">
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class ="dropdown-list">
+                <ul class = "no-list-style">
+                    <li>
+   		                <a href="" class="a-style-none"> Notifications </a>
+                    </li>
+                    <li>
+                        <a href="" class="a-style-none"> Profile </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	</header>
+	<main>
+		<!--carousel-->
+	    <div id="carousel">
+    		<section id="slider"  class="animated tada" >
+        		<input type="radio" name="slider" id="s1" >
+       			<input type="radio" name="slider" id="s2"  checked >
+        		<input type="radio" name="slider" id="s3">
+
+        		<label for="s1" id="slide1"></label>
+        		<label for="s2" id="slide2"></label>
+        		<label for="s3" id="slide3" ></label>
+    		</section>
+    	</div>
+
+    	<!--Latest release-->
+    	<h3>Latest Releases</h3>
+    	<div id="latest" >
+    		<div class="divide animated tada">
+    			<div class="song-thumbnail-container">
+    				<a href="#play-bar" class="a-style-none">
+    					<img src="source/nazy.jpg" class="song-thumbnail">
+    				</a>
+    			</div>
+    				<div class="latest-options latest-resp">
+    					<div class = "dropdown-menu text-right latest-dropdown">
+    						<div class="ellipsis">
+    							<i class="fas fa-ellipsis-v"></i>
+    						</div>
+						<div class ="dropdown-list  latest-dropdown-list">
+                    		<ul class = "no-list-style ul-width">
+                        	<li >
+                            	<a href="#play-bar" class="a-style-none">
+                            		<i class="fas fa-play"></i>
+                            		Play
+                            	</a>
+                        	</li>
+
+                        	<li>	
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-stream"></i>
+                            		Add to Queue
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-music"></i>
+                            		Play next 
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-heart"></i>
+                            		Favourite 
+                           		</a>
+                        	</li>
+                        	</ul>
+    					</div>
+    				</div>
+    			</div>
+    				<span class="song-desc latest-resp"><a href="" class="a-style-none"><h4>Tehelka</h4><p>2020</p></a></span>
+    			
+    		</div>
+    		<div class="divide animated tada">
+    			<div class="song-thumbnail-container">
+    				<a href="#play-bar" class="a-style-none">
+    					<img src="source/latestHindi4.png" class="song-thumbnail">
+    				</a>
+    			</div>
+    			<div class="latest-options latest-resp">
+    				<div class = "dropdown-menu text-right latest-dropdown">
+    					<div class="ellipsis">
+    						<i class="fas fa-ellipsis-v"></i>
+    					</div>
+					<div class ="dropdown-list  latest-dropdown-list">
+                    	<ul class = "no-list-style  ul-width">
+                       	<li >
+                           	<a href="#play-bar" class="a-style-none">
+                           		<i class="fas fa-play"></i>
+                           		Play
+                           	</a>
+                       	</li>
+                        <li>	
+                           	<a href="" class="a-style-none">
+                           		<i class="fas fa-stream"></i>
+                           		Add to Queue
+                           	</a>
+                       	</li>
+                       	<li>
+                           	<a href="" class="a-style-none">
+                           		<i class="fas fa-music"></i>
+                           		Play next 
+                           	</a>
+                       	</li>
+                       	<li>
+                           	<a href="" class="a-style-none">
+                           		<i class="fas fa-heart"></i>
+                           		Favourite 
+                       		</a>
+                       	</li>
+                       	</ul>
+   					</div>
+   				</div>
+   			</div>
+   			<span class="song-desc latest-resp"><a href="" class="a-style-none"><h4>Kedarnath </h4><p>2019</p></a></span>
+    		</div>
+    		<div class="divide animated tada">
+    			<div class="song-thumbnail-container">
+    				<a href="#play-bar" class="a-style-none">
+    					<img src="source/gullyboy2.jfif" class="song-thumbnail">
+    				</a>
+    			</div>
+    			<div class="latest-options latest-resp">
+    				<div class = "dropdown-menu text-right latest-dropdown">
+    					<div class="ellipsis">
+    						<i class="fas fa-ellipsis-v"></i>
+   						</div>
+					<div class ="dropdown-list  latest-dropdown-list">    <ul class = "no-list-style  ul-width">
+                        	<li >
+                    	       	<a href="#play-bar" class="a-style-none">
+                        	   		<i class="fas fa-play"></i>
+                           			Play
+                           		</a>
+                        	</li>
+
+                        	<li>	
+                            	<a href="" class="a-style-none" >
+                            		<i class="fas fa-stream"></i>
+                            		Add to Queue
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-music"></i>
+                            		Play next 
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-heart"></i>
+                            		Favourite 
+                           		</a>
+                        	</li>
+                        </ul>
+    				</div>
+    			</div>
+    		</div>
+    		<span class="song-desc latest-resp"><a href="" class="a-style-none"><h4>Azadi</h4><p>2020</p></a></span>
+    		</div>
+    		<div class="divide animated tada">
+    			<div class="song-thumbnail-container">
+    				<a href="#play-bar" class="a-style-none">
+    					<img src="source/malang.jpg" class="song-thumbnail">
+    				</a>	
+    			</div>
+    			<div class="latest-options latest-resp">
+    				<div class = "dropdown-menu text-right latest-dropdown">
+    					<div class="ellipsis">
+    						<i class="fas fa-ellipsis-v"></i>
+   						</div>
+					<div class ="dropdown-list latest-dropdown-list">    <ul class = "no-list-style  ul-width">
+                        	<li >
+                    	       	<a href="#play-bar" class="a-style-none">
+                        	   		<i class="fas fa-play"></i>
+                           			Play
+                           		</a>
+                        	</li>
+
+                        	<li>	
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-stream"></i>
+                            		Add to Queue
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-music"></i>
+                            		Play next 
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="" class="a-style-none">
+                            		<i class="fas fa-heart"></i>
+                            		Favourite 
+                           		</a>
+                        	</li>
+                        </ul>
+    				</div>
+    			</div>
+    		</div>
+    			<span class="song-desc latest-resp"><a href="" class="a-style-none"><h4>Chal Ghar Chalen</h4><p>2020</p></a></span>
+    		</div>
+
+    	</div>
+
+    	<!-- Popular Artists-->
+    	<h3>Popular Artists</h3>
+    	<div id="popular-artist">
+    		<div class="artist">
+    			<a href="neha.html" class="a-style-none">
+    				<img src="source/atifaslam.jpg" class="artist-photo animated zoomIn">
+    				<p class="artist-resp">Atif Aslam</p>
+    			</a>
+    		</div>
+    		<div class="artist">
+    			<a href="neha.html" class="a-style-none">
+    				<img src="source/arman malik.jfif" class="artist-photo animated zoomIn">
+    				<p class="artist-resp">Armaan Malik</p>
+    			</a>
+    		</div>
+			<div class="artist">
+				<a href="neha.html" class="a-style-none">
+    				<img src="source/chrismartin.jfif" class="artist-photo animated zoomIn">
+    				<p class="artist-resp">Chris Martin</p>
+    			</a>
+    		</div>
+    		<div class="artist">
+    			<a href="neha.html" class="a-style-none">
+    				<img src="source/nehak.jfif" class="artist-photo animated zoomIn">
+    				<p class="artist-resp">Neha Kakkar</p>
+    			</a>
+    		</div>
+    		<div class="artist">
+    			<a href="neha.html" class="a-style-none">	
+    				<img src="source/sonunigam.jfif" class="artist-photo animated zoomIn">
+    				<p class="artist-resp">Sonu Nigam</p>
+    			</a>
+    		</div>
+    	</div>
+
+    	<!--Playlists-->
+    	<h3>Playlist</h3>
+    	<div id="playlist">
+    		<div class="playlist-items playlist-resp">
+    			<img src="source/latestHindi2.png" class="playlist-image animated zoomIn">
+    			<a href="neha.html" class="a-style-none">
+    				<h2 class="playlist-name">Romantic</h2>
+    			</a>
+    		</div>
+    		<div class="playlist-items playlist-resp">
+    			<img src="source/divide.jpg" class="playlist-image animated zoomIn">
+    			<a href="neha.html" class="a-style-none">
+    				<h2 class="playlist-name">Mood</h2>
+    			</a>
+    		</div>
+    		<div class="playlist-items playlist-resp">
+    			<img src="source/deadmaouse.jfif" class="playlist-image animated zoomIn">
+    			<a href="neha.html" class="a-style-none">
+    				<h2 class="playlist-name">Energy</h2>
+    			</a>
+    		</div>
+    		<div class="playlist-items playlist-resp">
+    			<img src="source/playlistworkout.jpg" class="playlist-image animated zoomIn">
+    			<a href="neha.html" class="a-style-none">
+    				<h3 class="playlist-name" style="left: 5%; top:25%;">Workout</h3>
+    			</a>
+    		</div>
+    		<div class="playlist-items playlist-resp">
+    			<img src="source/roadtrip.png" class="playlist-image animated zoomIn">
+    			<a href="neha.html" class="a-style-none">
+    				<h2 class="playlist-name">Road Trip</h2>
+    			</a>
+    		</div>
+    		<div class="playlist-items playlist-resp">
+    			<img src="source/kishore.jfif" class="playlist-image animated zoomIn">
+    			<a href="neha.html" class="a-style-none">
+    				<h2 class="playlist-name" style="left: 5%;">Old Songs</h2>
+    			</a>
+    		</div>
+    		<div class="playlist-list">
+    		<ul class = "no-list-style ul-width">
+                <li >
+                    <a href="neha.html" class="a-style-none">
+                        Romantic	
+                    </a>
+                </li>
+                <li>	
+                    <a href="neha.html"class="a-style-none">
+                    	Energy
+                    </a>
+                </li>
+                <li>
+                	<a href="neha.html" class="a-style-none">
+                    	Workout 
+                    </a>
+                </li>
+                <li>
+                    <a href="neha.html" class="a-style-none">
+                    	Roadtrip
+                    </a>
+                </li>
+                <li>
+                    <a href="neha.html" class="a-style-none">
+                    	Old Songs
+                    </a>
+                </li>
+                </ul>
+    		</div>
+    	</div>
+    	<!--Scene-->
+    	<div id="scene-container">
+    		<div class="scene scene-resp">
+    			<div class="scene-image-container ">
+    				<img src="source/party2.jfif" class="scene-image">
+    				<a href="neha.html" class="a-style-none">
+    					<h2 class="scene-name animated bounce infinite">Party</h2>
+    				</a>
+    			</div>
+    		</div>
+    		<div class="scene scene-resp">
+    			<div class="scene-image-container scene-resp">
+    				<img src="source/elec.jfif" class="scene-image">
+    				<a href="neha.html" class="a-style-none">
+    					<h2 class="scene-name animated bounce infinite" style="left: 25%;">Electronic</h2>
+    				</a>
+    			</div>
+    		</div>
+    		<div class="scene scene-resp">
+    			<div class="scene-image-container ">
+    				<img src="source/roadtrip1.jfif" class="scene-image">
+    				<a href="neha.html" class="a-style-none">
+    					<h2 class="scene-name animated bounce infinite">Roadtrip</h2>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    	<!--English Latest-->
+    	<h3>English Latest</h3>
+    	<div class="latest-songs">
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/control.jpg" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Control</h4><p>20202</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/loveme.jfif" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Love me Like </h4><p>2019</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar"><img src="source/Closer.jfif" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Closer</h4><p>2019</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/animals.jfif" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Animals</h4><p>2019</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/letme.jfif" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Let Me Love You</h4><p>2019</p></a></div>
+    		</div>
+    	</div>
+    	<!--Hindi Latest-->
+    	<h3>Hindi Latest</h3>
+    	<div class="latest-songs">
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/baateionkro.jpg" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Baateion Kro</h4><p>2020</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar"><img src="source/image-1.png" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4> Tune Mera</h4><p>2019</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/latestHindi2.png" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Ghungroo </h4><p>2020</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/kabirsingh.jfif" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Kabir Singh</h4><p>2019</p></a></div>
+    		</div>
+    		<div class="song-container animated zoomIn">
+    			<a href="#play-bar" class="a-style-none"><img src="source/arjitandneha.jpg" class="song-image">
+    			</a>
+    			<div class="song-name"><a href="" class="a-style-none"><h4>Arjit Singh</h4><p>2019</p></a></div>
+    		</div>
+    	</div>
+	</main>
+	<aside>
+		<div id="queue-heading">
+			<h1>Queue</h1>
+			<div class = "dropdown-menu text-right">
+    			<div class="queue-dropdown queue-resp">
+    				Queue<i class="fas fa-chevron-down"></i>
+   				</div>
+				<div class ="dropdown-list queue-list">
+					<ul class = "no-list-style ul-width">
+                        <li >
+                    	  	<a href="" class="a-style-none">
+                       			Playlist
+                       		</a>
+                       	</li>
+                       	<li>	
+                           	<a href="" class="a-style-none">
+                           		Favourite songs
+                           	</a>
+                       	</li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+		<div class="queue-song">
+			<i class="fas fa-align-right center-align icon-rotate queue-prefix"></i>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/jee.jfif" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Jee Kar Da</h3>
+					<p>Hardy Sandhu</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">01</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kala.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kalla Sohna Nai </h3>
+					<p>Neha Kakkar</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">02</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/tuhidas.jfif" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Tu Hi Das De</h3>
+					<p>Mickey Singh</p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">03</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/bue.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Buhe Bariyan</h3>
+					<p>Rashmeet Kaur</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">04</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/phir.webp" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Phir Na Milen Kabhi</h3><br>
+					<p>Ankit Tiwari</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">05</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/stran.jfif" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Stranger</h3>
+					<p>Diljit Dosanjh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">06</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/bari.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Baari</h3>
+					<p>Bilal Saeed</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+	</aside>
+	<footer> 
+
+
+		<div id="play-bar">
+			<div class="player-rightside">
+				<div class="queue-song">
+				<img src="source/queue/gullyboy2.jfif" class="player-song-image center-align">
+				<div class="queue-song-name name-play-bar-resp">
+					<h3>Bolo Azadi</h3>
+					<p>Gully boy</p>
+				</div>
+				<a href="" class="a-style-none favourite-icon name-play-bar-resp">
+					<i class="fas fa-ban ban-hover"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</a>
+				</div>
+			</div>
+
+
+			<div class="player-center">
+				<div class="player-controls">
+					<i class="fas fa-random center-align control-play-bar-resp"></i>
+					<i class="fas fa-step-backward center-align"></i>
+					<i class="fas fa-play-circle center-align" id="play-button"></i>
+					<i class="fas fa-step-backward icon-rotate-full center-align"></i>
+					<i class="fas fa-undo-alt center-align control-play-bar-resp"></i>
+				</div>
+				<span class="song-duration control-play-bar-resp">0:00</span>
+				<div class="progress">
+					<div class="played"></div>
+				</div>
+				<span class="song-duration control-play-bar-resp">3:44</span>
+
+			</div>
+
+			<div class="player-leftside">
+					<i class="fas fa-stream center-align volume-play-bar-resp"></i>
+					<i class="fab fa-soundcloud center-align volume-play-bar-resp"></i>
+					<div class="center-align">
+						<span ><i class="fas fa-volume-up "></i></span>
+						<div class="progress volume-progress" >
+							<div class="played "></div>
+						</div>
+					</div>
+					<i class="fas fa-expand center-align volume-play-bar-resp"></i>
+				<a href="#" class="a-style-none">x</a>
+			</div>
+	</footer>
+</body>
+
+</html>
